@@ -12,7 +12,9 @@ let dadosCep = async function(cep){
         let dadosJson = await dadosFetch.json();
         resultadoCep(dadosJson);
     }catch(error){
-        alert(error);
+        console.log(error);
+        alert(`Verifique se as informações estão corretas\n ${error}`);
+
     } 
  }
  export{dadosCep};
